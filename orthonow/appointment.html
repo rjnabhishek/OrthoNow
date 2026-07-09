@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | OrthoNow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];
+    w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WMCD65MC');
+    </script>
+    
+</head>
+<body>
+    
+
+
+<noscript>
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-WMCD65MC"
+height="0"
+width="0"
+style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+
+    <section class="booking">
+        <div class="booking-container">
+            <h1> Book Your Appointment</h1>
+            <div class="progress">
+                <div class="step active">
+                1
+                </div>
+                <div class="line">
+            </div>
+             <div class="step">2</div>
+            <div class="line"></div>
+
+            <div class="step">3</div>
+
+
+        </div>
+
+        <div class="form-step active" id="step1">
+            <h2>Select Clinic & Specialty</h2>
+            <select id="city">
+                <option>Select City</option>
+                <option> Bengaluru </option>
+                <option> Patna </option>
+                <option> Kateya </option>
+                <option> Gopalgunj </option>
+                <option> Coimbatore </option>
+                <option> New Delhi </option>
+                <option>Hyderabad</option>
+                <option>Chennai</option>
+            </select>
+
+            <select id="clinic">
+                <option>Select Clinic</option>
+
+                <option>Indiranagar</option>
+
+                <option>Boring Road</option>
+                <option>Khurhuriya</option>
+
+                <option>Kateya city</option>
+                <option>R.S. Puram</option>
+
+                <option>Saket</option>
+
+                <option>Koramangala</option>
+                
+
+                <option>Whitefield</option>
+
+                
+                
+            </select>
+            <select id="specialty">
+
+                <option>Select Specialty</option>
+
+                <option>Orthopaedics</option>
+
+                <option>Sports Injury</option>
+
+                <option>Spine Care</option>
+
+            </select>
+            <button id="next1">
+                Continue
+            </button>
+        </div>
+
+        <div class="form-step" id="step2">
+            <h2>Patient Details</h2>
+
+            <input
+id="patientName"
+type="text"
+placeholder="Full Name">
+
+<input
+id="patientPhone"
+type="tel"
+placeholder="Phone Number">
+
+<input
+id="appointmentDate"
+type="date">
+
+            <button id="back1">
+                Previous
+            </button>
+
+            <button id="next2">
+                Continue
+            </button>
+
+        </div>
+        <div class="form-step" id="step3">
+
+            <h2>Confirm Appointment</h2>
+
+            <p>
+                Review your appointment details before confirming.
+            </p>
+
+            <button id="back2">
+                Previous
+            </button>
+
+            <button id="confirmBooking">
+                Confirm Booking
+            </button>
+
+        </div>
+
+    </div>
+
+    </section>
+    <script src="booking.js"></script>
+    
+</body>
+</html>
