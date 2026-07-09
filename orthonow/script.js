@@ -45,17 +45,16 @@ document.getElementById("guideForm").addEventListener("submit", function(e){
 
     e.preventDefault();
 
-    window.dataLayer.push({
+    console.log("Submit event fired");
 
-        event:"patient_guide_submit",
+window.dataLayer.push({
+    event:"patient_guide_submit",
+    form_name:"Patient Guide",
+    page_name:"homepage",
+    lead_type:"ebook"
+});
 
-        form_name:"Patient Guide",
-
-        page_name:"homepage",
-
-        lead_type:"ebook"
-
-    });
+console.log(window.dataLayer);
 
     alert("Guide Download Started");
 
